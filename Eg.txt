@@ -1,0 +1,214 @@
+
+Administrator@MCA-37 MINGW64 ~
+$ git init
+Initialized empty Git repository in C:/Users/Administrator/.git/
+
+Administrator@MCA-37 MINGW64 ~ (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Administrator/.git/
+
+Administrator@MCA-37 MINGW64 ~ (master)
+$ cd desktop
+
+Administrator@MCA-37 MINGW64 ~/desktop (master)
+$ mkdir rahul
+
+Administrator@MCA-37 MINGW64 ~/desktop (master)
+$ cd rahul
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git init
+Initialized empty Git repository in C:/Users/Administrator/Desktop/rahul/.git/
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git config -- global "RAHUL-HS"
+error: key does not contain a section: global
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git config -- global user.name "RAHUL-HS"
+error: key does not contain a section: global
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git config -- global user.name
+error: key does not contain a section: global
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git config - global user.name
+error: key does not contain a section: -
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git config -- global user.name "RAHUL-HS"
+error: key does not contain a section: global
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git config -- global user.name "RAHUlHS"
+error: key does not contain a section: global
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git config --global user.name "RAHUlHS"
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git config --global user.name "RAHUL-HS"
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git config --global user.email "hsrahul1099@gmail.com"
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ touch Eg.txt
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ ls
+Eg.txt  File1.txt
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git add File1.txt
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Eg.txt
+
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   File1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Eg.txt
+
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git add File1.txt
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   File1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Eg.txt
+
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git commit -m "Raagu"
+[master (root-commit) 78044b9] Raagu
+ 1 file changed, 2 insertions(+)
+ create mode 100644 File1.txt
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Eg.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ ^C
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git log
+commit 78044b9bcb5158807a0b5a7506a1e7ad4d1f4ecb (HEAD -> master)
+Author: RAHUL-HS <hsrahul1099@gmail.com>
+Date:   Thu Oct 27 12:04:07 2022 +0530
+
+    Raagu
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git show
+commit 78044b9bcb5158807a0b5a7506a1e7ad4d1f4ecb (HEAD -> master)
+Author: RAHUL-HS <hsrahul1099@gmail.com>
+Date:   Thu Oct 27 12:04:07 2022 +0530
+
+    Raagu
+
+diff --git a/File1.txt b/File1.txt
+new file mode 100644
+index 0000000..ae56668
+--- /dev/null
++++ b/File1.txt
+@@ -0,0 +1,2 @@
++Hello Git Hub,
++RNSIT
+\ No newline at end of file
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ ls
+Eg.txt  File1.txt
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git remote add origin(https://github.com/RAHUL-HS/Example)
+bash: syntax error near unexpected token `('
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git remote add origin (https://github.com/RAHUL-HS/Example)
+bash: syntax error near unexpected token `('
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git remote add origin (https://github.com/RAHUL-HS/Example.git)
+bash: syntax error near unexpected token `('
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git remote add origin(https://github.com/RAHUL-HS/Example.git)
+bash: syntax error near unexpected token `('
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git remote add origin("https://github.com/RAHUL-HS/Example.git")
+bash: syntax error near unexpected token `('
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git remote add origin('https://github.com/RAHUL-HS/Example.git')
+bash: syntax error near unexpected token `('
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git remote add origin https://github.com/RAHUL-HS/Example.git
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git remote -v
+origin  https://github.com/RAHUL-HS/Example.git (fetch)
+origin  https://github.com/RAHUL-HS/Example.git (push)
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git push origin master
+
+
+Administrator@MCA-37 MINGW64 ~/desktop/rahul (master)
+$ git push origin master
+fatal: An error occurred while sending the request.
+fatal: The request was aborted: Could not create SSL/TLS secure channel.
